@@ -1,5 +1,5 @@
 # BIMarathon2021
-### This repository is for the project to be done under BI Marathon 2021. BI Marathon 2021 is a 2 month long Data Analysis course, where each week is focused on an important step involved in the process of data analysis. It will help me understand the concepts of Dimension Modeling and Data Warehouse, hone my existing knowledge of SQL, Python, statistical modeling, predictive analytics and data visualization tool like Tableau/Power BI.
+### This repository is for the project to be done under BI Marathon 2021. BI Marathon 2021 is a 2 month long Data Analysis Mentoring Program, where each week is focused on an important step involved in the process of data analysis. It will help me understand the concepts of Dimension Modeling and Data Warehouse, hone my existing knowledge of SQL, Python, statistical modeling, predictive analytics and data visualization tool like Tableau/Power BI.
 ----------------------
 ## Week 1 : Building a Real world project
 ----------------------
