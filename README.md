@@ -4,27 +4,36 @@
 ## Week 1 : Building a Real world project
 ----------------------
 1. Data Source and description:
-* Data Source : "HR Analytics(https://www.kaggle.com/arashnic/hr-analytics-job-change-of-data-scientists)"
-* Data Description : The dataset is designed to understand the factors that lead a person to leave current job and company, for HR researches. It is imbalanced and most features are categorical (Nominal, Ordinal, Binary), some with high cardinality.
-  * *Nominal data : Nominal data is defined as data that is used for naming or labelling variables, without any quantitative value. There is usually no intrinsic ordering to nominal data. Example, Race is a nominal variable having a number of categories, but there is no specific way to order from highest to lowest and vice versa.*
-  *  *Ordinal data : Ordinal data is a type of categorical data with an order and are usually numbered, so as to indicate the order of the list. However, the numbers are not mathematically measured or determined but are merely assigned as labels for opinions. Examples of ordinal variables include: socio economic status (“low income”,”middle income”,”high income”), education level (“high school”,”BS”,”MS”,”PhD”), income level (“less than 50K”, “50K-100K”, “over 100K”), satisfaction rating (“extremely dislike”, “dislike”, “neutral”, “like”, “extremely like”).*
-  *   *Binary data : Binary data is data whose unit can take on only two possible states, traditionally labeled as 0 and 1 in accordance with the binary numeral system and Boolean algebra.*
-  *   *High-cardinality refers to columns with values that are very uncommon or unique. High-cardinality column values are typically identification numbers, email addresses, or user names.*
+* Data Source : "HR Analytics(https://data.louisvilleky.gov/dataset/enterprise-measures)"
+* Data Description : There is a total of 4 data files which consists data regarding Absenteeism, Sick Leave, Total Hours Worked and Turnover rate. The information gathered through HRIS analytics can help managers with matters such as:
+     * Employee turnover tracking : (by roles and department)
+     * Employee performance monitoring 
+     * Retention
+     * Absenteeism
 2. Project mission : 
-* Predict the probability of a candidate to look for a new job or will work for the company
-* Identifying factors affecting an employee decision to leave
-3. Features
-   * enrollee_id : Unique ID for candidate
-   * city: City code
-   * city_ development _index : Developement index of the city (scaled)
-   * gender: Gender of candidate
-   * relevent_experience: Relevant experience of candidate
-   * enrolled_university: Type of University course enrolled if any
-   * education_level: Education level of candidate
-   * major_discipline :Education major discipline of candidate
-   * experience: Candidate total experience in years
-   * company_size: No of employees in current employer's company
-   * company_type : Type of current employer
-   * lastnewjob: Difference in years between previous job and current job
-   * training_hours: training hours completed
-   * target: 0 – Not looking for job change, 1 – Looking for a job chang
+* The Office of Performance Improvement strives to provide Metro Government and its partners with customized improvement support to create a world-class city.
+* Finding KPI metrics that can improve performance of employees
+3. Dimensions : 
+   * Absenteeism : 
+      1. Department : TOTAL EMPLOYEE
+      2. Payment Date : BIWEEKLY_PAY_PERIOD_END_DATE
+      3. Hours: TOTAL_HOURS, TOTAL AVAL HOURS
+   * Sick Leave :
+      1. Department : Total Empl
+      2. Payment Date : BIWEEKLY_PAY_PERIOD_END_DATE
+   * Total Hours worked : 
+      1. Account Details : L_ACCT, L_FUND
+      2. Work_hr_type : WORKED_HRS_TYPE, EARN_CODE, EARN_DESCR, 
+      3. Department : L_DIVISION, DivName, DEPTID, SubDept
+      4. Payment Date : BIWEEKLY_PAY_PERIOD_END_DATE, FiscalYear
+   * Turnover :
+      1. Date : MONTH_END_DATE, MONTH, YEAR
+      2. Employee : AGE_GROUP_AT_DEPARTURE, ,ETHNIC_GROUP,GENDER
+      3. Employee_Level : REASON, LEAVE_TYPE, EMP_LEFT
+      4. Department_Level : DEPT_EMP_LEFT, REG_TEMP_DEPT_TOTAL_EMP, DEPT_TOTAL_EMP
+      5. Metro_Level : METRO_TOTAL_EMP
+* Facts: 
+  * Absenteeism : LOST WORKTIME RATE, FK_DEPT
+  * Sick Leave : HIGH CONSUMER, FK_DEPT
+  * Total Hours worked : AMOUNT_HOURS, AMOUNT_DOLLARS, FK_DEPT
+  * Turnover: YEARS_IN_METRO, FK_Dept
