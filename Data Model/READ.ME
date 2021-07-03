@@ -1,0 +1,28 @@
+Steps for Dimensional Modeling: 
+
+Business Value: The Office of Performance Improvement strives to provide Metro Government and its partners with customized improvement support to create a world-class city.
+Grain: Deparmental analysis on performance improvement by spotting problems and making corrections.
+
+----------------------------------------------------------------------------
+Dimensions : 
+   ** Department : PK_DeptID
+      (Total_Employee, Total_Empl, L_Division, DivName, Dept, SubDept, Dept_Emp_Left, Reg_Temp_Dept_Total_Emp)
+   ** Date : PK_1_Biweekly_Pay_Period_End_Date
+      (Biweekly_Pay_Period_End_Date, Biweekly_Pay_Period_End_Date, FiscalYear, Month_End_Date, Month, Year)
+   ** Work Hours: PK_Earn_Code
+      (Worked_Hrs_Type, Earn_Descr, Total_Aval_Hrs)
+   ** Employee: PK_DEPT
+      (Age_Group_At_Departure, Ethnic_Group, Gender, Reason, Leave_type, Emp_Left)
+
+----------------------------------------------------------------------------   
+Facts: 
+  ** FK_1_DeptID
+  ** FK_2_Biweekly_Pay_Period_End_Date
+  ** FK_3_Earn_Code
+  ** FK_4_Dept
+  ** Lost_Worktime_Rate
+  ** High_Consumer
+  ** Amount_Hours
+  ** Amount_Dollars
+  ** Years_In_Metro
+  ** Total_Hours
