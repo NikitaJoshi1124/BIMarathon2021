@@ -14,13 +14,6 @@
 * The Office of Performance Improvement strives to provide Metro Government and its partners with customized improvement support to create a world-class city.
 * Finding KPI metrics that can improve performance of employees
 3. Dimensions : 
-   * Absenteeism : 
-      1. Department : TOTAL EMPLOYEE
-      2. Payment Date : BIWEEKLY_PAY_PERIOD_END_DATE
-      3. Hours: TOTAL_HOURS, TOTAL AVAL HOURS
-   * Sick Leave :
-      1. Department : Total Empl
-      2. Payment Date : BIWEEKLY_PAY_PERIOD_END_DATE
    * Total Hours worked : 
       1. Account Details : L_ACCT, L_FUND
       2. Work_hr_type : WORKED_HRS_TYPE, EARN_CODE, EARN_DESCR, 
@@ -33,7 +26,5 @@
       4. Department_Level : DEPT_EMP_LEFT, REG_TEMP_DEPT_TOTAL_EMP, DEPT_TOTAL_EMP
       5. Metro_Level : METRO_TOTAL_EMP
 * Facts: 
-  * Absenteeism : LOST WORKTIME RATE, FK_DEPT
-  * Sick Leave : HIGH CONSUMER, FK_DEPT
   * Total Hours worked : AMOUNT_HOURS, AMOUNT_DOLLARS, FK_DEPT
   * Turnover: YEARS_IN_METRO, FK_Dept
